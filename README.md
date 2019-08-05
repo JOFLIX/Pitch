@@ -70,7 +70,7 @@ Moringapitch is a flask application providing access to all capstone projects Mo
 
 ### Link to live site
 
-[Here](https://github.com/IJaccojwang/moringapitch) is a link to the live site
+[Here](https://github.com/JOFLIX/pitcher) is a link to the live site
 
 ## Support and contact details
 
