@@ -9,10 +9,9 @@
 
     <div class="content-section">
         <form method="POST" action="">
-            {{ form.csrf_token }}
-            {{ form.hidden_tag() }}
+            {{ form.csrf_token }} {{ form.hidden_tag() }}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Log In</legend>
+                <legend class="border-bottom mb-4 "><span class="badge badge-success">Log In</span></legend>
                 <div class="form-group">
                     {{ form.email.label(class="form-control-label") }} {% if form.email.errors %} {{ form.email(class="form-control form-control-lg is-invalid") }}
                     <div class="invalid-feedback">
@@ -52,7 +51,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> MoringaPitch</a>
+        <a href="https://mdbootstrap.com/education/bootstrap/"> PreachYourPitch</a>
     </div>
     <!-- Copyright -->
 

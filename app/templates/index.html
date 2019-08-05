@@ -4,7 +4,8 @@
 
 {% block styles%} {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:700i" rel="stylesheet"> {% endblock %}
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis|Playfair+Display|Saira+Stencil+One&display=swap" rel="stylesheet"> {% endblock %}
 
 <!-- Content block -->
 {% block content %}
@@ -16,9 +17,9 @@
     <!-- Content -->
     <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
         <div>
-            <h1 style="font-size:100px;font-family: 'Montserrat', sans-serif;">Keep Calm and Pitch</h1>
-            <h3 class="card-title pt-2"><strong>WHERE WONDERFUL IDEAS MEET GREAT DEVELOPERS</strong></h3>
-            <p style="margin-bottom:5%">Get access to projects done my previous cohorts to get your imagnation going. See a project you can improve, change or approach in a totally new manner. Go ahead - test the waters, give feedback and have fun</p>
+            <h1 style="font-size:100px;font-family: 'Playfair Display', serif;;">Keep Calm and Pitch</h1>
+            <h3 class="card-title pt-2"><strong style="font-family: 'Dosis', sans-serif;">WHERE WONDERFUL IDEATION MEET GREAT DEVELOPMENT</strong></h3>
+            <p style="margin-bottom:5% font-family: 'Saira Stencil One', cursive">Get access to projects done my previous cohorts to get your imagnation going. See a project you can improve, change or approach in a totally new manner. Go ahead - test the waters, give feedback and have fun</p>
             <a style="margin-bottom:10.8%" class="btn btn-green darken-2" href="/about"><i class="fas fa-clone left"></i>About</a>
             <a style="margin-bottom:10.8%" class="btn btn-green darken-2" href="/pitches/mc1"><i class="fas fa-clone left"></i>Pitches</a>
 
@@ -28,11 +29,11 @@
 </div>
 </div>
 <!-- Footer -->
-<footer class="page-footer font-small light-green darken-2">
+<footer class="page-footer font-small light-green darken-4">
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> MoringaPitch</a>
+        <a href="https://mdbootstrap.com/education/bootstrap/"> PreachYourPitch</a>
     </div>
     <!-- Copyright -->
 
