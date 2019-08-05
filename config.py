@@ -1,12 +1,12 @@
 import os
-
+# from . import app
 class Config:
     '''
     General configuration parent class
     '''
 
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY = "b'\xfd\x1c]@g*\xe3\x92\x8c\xa1\x93\xbb\xe3\x84\x9a\x8f\xe2\xf2\x7f\x86\x18oVM'"
 
     #email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -50,6 +50,3 @@ config_options = {
     'test': TestConfig
 }
 
-SECRET_KEY = os.urandom(32)
-app.config['SECRET_KEY'] = SECRET_KEY
-WTF_CSRF_SECRET_KEY = SECRET_KEY
