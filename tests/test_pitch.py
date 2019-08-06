@@ -5,7 +5,7 @@ from datetime import datetime
 
 class PitchTest(unittest.TestCase):
     def setUp(self):
-        self.new_pitch = Pitch(title='New Pitch', description='This is the content',owners='people', cohort='mc4',technologies='python',comments='comments here',stars=4, pitched_p=datetime.now())
+        self.new_pitch = Pitch(title='New Pitch', description='This is the content',owners='people', team='mc4',technologies='python',comments='comments here',stars=4, pitched_p=datetime.now())
 
     def tearDown(self):
         db.session.delete(self.new_pitch)
@@ -18,7 +18,7 @@ class PitchTest(unittest.TestCase):
         self.assertEquals(self.new_pitch.title,'New Pitch')
         self.assertEquals(self.new_pitch.description,'This is the content')
         self.assertEquals(self.new_pitch.owners, 'people')
-        self.assertEquals(self.new_pitch.cohort, 'mc4')
+        self.assertEquals(self.new_pitch.team, 'mc4')
         self.assertEquals(self.new_pitch.technologies, 'python')
         self.assertEquals(self.new_pitch.comments, 'comments here')
         self.assertEquals(self.new_pitch.stars,4)

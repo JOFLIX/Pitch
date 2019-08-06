@@ -5,7 +5,7 @@ from datetime import datetime
 
 class CommentsTest(unittest.TestCase):
     def setUp(self):
-        self.new_pitch = Pitch(title='New Pitch', description='This is the content',owners='people', cohort='mc4',technologies='python',comments='comments here',stars=4, pitched_p=datetime.now())
+        self.new_pitch = Pitch(title='New Pitch', description='This is the content',owners='people', team='mc4',technologies='python',comments='comments here',stars=4, pitched_p=datetime.now())
         self.new_comment = Comment(comment='This is my Test comment',pitch=new_pitch,pitched_c='here it is',user_c='us')
 
     def tearDown(self):

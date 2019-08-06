@@ -1,5 +1,6 @@
 {
     "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "workbench.colorTheme": "Default Dark+",
-    "python.pythonPath": "virtual/bin/python"
+    "python.pythonPath": "virtual/bin/python",
+    "gtest-adapter.showRunOutput": false
 }

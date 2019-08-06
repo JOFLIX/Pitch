@@ -30,7 +30,7 @@
                 <h2 class="pb-3 font-weight-bold">Description</h2>
                 <p align="justify">{{pitch.description}}</p>
                 <a class="white-text" href="{{url_for('main.star',pitch_id = pitch.id)}}"><i class="far fa-star"></i> Stars {{pitch.stars.count()}} </a></li>
-                <a href="{{url_for('main.new_comment',pitch_id = pitch.id)}}" class="btn btn-green darken-2"> Add a comment</a>
+                <a href="{{url_for('main.new_comment',pitch_id = pitch.id)}}" class="btn btn-blue darken-2"> Add a comment</a>
             </div>
   
           </div>

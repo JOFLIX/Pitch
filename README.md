@@ -61,8 +61,8 @@ Moringapitch is a flask application providing access to all capstone projects Mo
 
 | Behaviour                                                         | Sample Input                                        | Sample Output                                                 |
 | ----------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------- |
-| Display landing page with pitches categorised according to cohort | Link to live site                                   | The landing page is displayed                                 |
-| Display all projects for a selected cohort                        | Click on 'view projects' button                     | projects for the selected cohort displayed                    |
+| Display landing page with pitches categorised according to team | Link to live site                                   | The landing page is displayed                                 |
+| Display all projects for a selected team                        | Click on 'view projects' button                     | projects for the selected team displayed                    |
 | View details of pitch, including comments of the pitch            | Click on 'view more' button                         | Display project description and comments                      |
 | Prompt user to login                                              | Click on 'sign in'/'add comment'/'add pitch' button | Display login form                                            |
 | Authenticate user to add a Pitch and comment                      | If user has no account a sign up form is displayed  | User is automatically logged in and free to add pitch/comment |

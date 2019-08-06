@@ -20,7 +20,7 @@ class Pitch(db.Model):
     title = db.Column(db.String)
     description = db.Column(db.String)
     owners = db.Column(db.String)
-    cohort = db.Column(db.String)
+    team = db.Column(db.String)
     technologies = db.Column(db.String)
     comments = db.relationship('Comment', backref='pitch', lazy='dynamic')
     stars = db.relationship('Star', backref='pitch', lazy='dynamic')
