@@ -16,7 +16,7 @@ from flask_wtf.csrf import CSRFProtect
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
-bcrypt = Bcrypt()
+# bcrypt = Bcrypt()
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
 login_manager.session_protection = 'strong'
