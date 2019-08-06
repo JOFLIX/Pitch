@@ -7,6 +7,7 @@ class Config:
 
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
     SECRET_KEY = "b'\xfd\x1c]@g*\xe3\x92\x8c\xa1\x93\xbb\xe3\x84\x9a\x8f\xe2\xf2\x7f\x86\x18oVM'"
+    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://moringa:123@localhost/pitches'
 
     #email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -50,3 +51,5 @@ config_options = {
     'test': TestConfig
 }
 
+class ProdConfig(Config):
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")

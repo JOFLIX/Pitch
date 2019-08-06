@@ -11,9 +11,9 @@ manager.add_command('server',Server)
 migrate = Migrate(app,db)
 manager.add_command('db',MigrateCommand)
 
-admin.add_view(ModelView(User, db.session))
-admin.add_view(ModelView(Pitch, db.session))
-admin.add_view(ModelView(Comment, db.session))
+# admin.add_view(ModelView(User, db.session))
+# admin.add_view(ModelView(Pitch, db.session))
+# admin.add_view(ModelView(Comment, db.session))
 @manager.command
 def test():
     """Run the unit tests."""
@@ -24,5 +24,7 @@ def test():
 @manager.shell
 def make_shell_context():
     return dict(app = app,db = db,User = User, Pitch = Pitch )
+
+
 if __name__ == '__main__':
     manager.run()
